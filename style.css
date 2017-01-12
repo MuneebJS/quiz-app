@@ -1,0 +1,29 @@
+li:hover {
+    font-size: 20px;
+    color: blue;
+}
+.non-visible {
+    visibility: hidden;
+}
+.show {
+    display: block!important;
+    visibility: initial;
+}
+li {
+    text-align: center;
+    background-color: #eaeaea;
+    color: #444;
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 1.2em;
+    width: 85%;
+    margin: 6px auto;
+    border: 2px solid #d6d6d6;
+    display: block;
+}
+#dialogue-box {
+    width: 80%;
+    height: 200px;
+    background-color: silver;
+    
+}
