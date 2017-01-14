@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Cricket Quiz</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Bootstrap.css">
@@ -11,130 +11,311 @@
 
 <body>
     <div class="container">
-        <div id="ques1">
-            <div>
-                10 of <span id="ques_no">1</span>
+        <div id="begin">
+            <div class="row">
+                <div id="header-img" class="col-xs-12">
+                    <img src="images/header.gif" alt="Cricket Quiz" class="img-responsive">
+                </div>
             </div>
-            <img src="images/kohli.jpg">
-            <ul>
-                <li class="wrong">Dhoni</li>
-                <li class="correct">Kohli</li>
-                <li class="wrong">Sehwag</li>
-            </ul>
+            <div>
+                <p class="col-xs-12 col-md-offset-2 col-md-8">
+                    How much you know about Cricketers.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <input type="button" value="Start" id="start" class="btn btn-primary btn-lg btn-block">
+                </div>
+            </div>
         </div>
-        <!--<div id="ques2" style="display: none">
-<div>
-    10 of <span id="ques_no">2</span>
-</div>
-<img src="images/morgan.jpg">
-<ul>
-    <li class="wrong"> Dhoni</li>
-    <li class="correct">Morgan</li>
-    <li class="wrong">Sehwag</li>
-</ul>
-</div>-->
-        <div id="ques3" style="display: none">
-            <div>
-                10 of 3
+        <div id="ques1" style=" display: none ">
+<div class="row img">
+    <div class="col-md-3">
+        <div class="gadget">
+            <div class="gadget-top">
+                <span id="current">1</span><span id="total"> / 10<span>
+                        </div>
+                        <div class="gadget-bottom">
+                            QUESTIONS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/img (1).jpg" class="img-responsive img-rounded">
+                </div>
             </div>
-            <img src="images/watson.jpg">
-            <ul>
-                <li class="wrong">Dhoni</li>
-                <li class="correct">Watson</li>
-                <li class="wrong">Sehwag</li>
-            </ul>
-            <!--<div id="ques4" style="display: none">
-<div>
-    10 of 4
-</div>
-<img src="images/gautam.jpg">
-<ul>
-    <li class="correct">Gautam Ghambir</li>
-    <li class="wrong">Watson</li>
-    <li class="wrong">Sehwag</li>
-</ul>
-</div>
-<div id="ques4" style="display: none">
-<div>
-    10 of 5
-</div>
-<img src="images/lee.jpg">
-<ul>
-    <li class="wrong">Dhoni</li>
-    <li class="wrong">Watson</li>
-    <li class="correct">Breet Lee</li>
-</ul>
-</div>
-<div id="ques4" style="display: none">
-<div>
-    10 of 6
-</div>
-<img src="images/peterson.jpg">
-<ul>
-    <li class="correct">Kevin Peterson</li>
-    <li class="wrong">Watson</li>
-    <li class="wrong">Sehwag</li>
-</ul>
-</div>
-<div id="ques7" style="display: none">
-<div>
-    10 of 7
-</div>
-<img src="images/ponting.jpg">
-<ul>
-    <li class="wrong">Dhoni</li>
-    <li class="wrong">Watson</li>
-    <li class="correct">Ricky Ponting</li>
-</ul>
-</div>
-<div id="ques8" style="display: none">
-<div>
-    10 of 8
-</div>
-<img src="images/sohn.jpg">
-<ul>
-    <li class="wrong">Dhoni</li>
-    <li class="correct">Sohn </li>
-    <li class="wrong">Sehwag</li>
-</ul>
-</div>
-<div id="ques9" style="display: none">
-<div>
-    10 of 9
-</div>
-<img src="images/warne.jpg">
-<ul>
-    <li class="wrong">Dhoni</li>
-    <li class="correct">Shane Warne</li>
-    <li class="wrong">Sehwag</li>
-</ul>
-</div>-->
-            <div id="ques10" style="display: none">
-<div>
-    10 of 10
-</div>
-<img src="images/gilgrist.jpg">
-<ul>
-    <li class="correct">Adam Gilgist</li>
-    <li class="wrong">Watson</li>
-    <li class="wrong">Sehwag</li>
-</ul>
-</div>
-<div id="get-result" class="non-visible">
-    <h1>Congrats!</h1>
-    <h1>You have completed the quiz</h1>
-    <input type="button" value="Result" id="result-btn" class="btn btn-primary">
-</div>
-<div id="result" class="non-visible">
-    <h1>Rseult</h1>
-    <div id="score">Correct Answers</div>
-    <div id="per">You scored</div>
-</div>
-<div id="dialogue-box-corr" style="display: none">
-    Correct
-</div>
-<div id="dialogue-box-incorr" style="display: none">
-    Incorrect
+            <div class="row ans">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <ul>
+                        <li class="wrong">Steven Finn</li>
+                        <li class="correct">Dale Steyn</li>
+                        <li class="wrong">James Anderson</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="ques2" style="display: none">
+<div class="row img">
+    <div class="col-md-3">
+        <div class="gadget">
+            <div class="gadget-top">
+                <span id="current">2</span><span id="total"> / 10<span>
+                        </div>
+                        <div class="gadget-bottom">
+                            QUESTIONS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/img (2).jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
+            <div class="row ans">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <ul>
+                        <li class="wrong">Steven Finn</li>
+                        <li class="correct">Dale Steyn</li>
+                        <li class="wrong">James Anderson</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div id="ques3" style="display: none">
+<div class="row img">
+    <div class="col-md-3">
+        <div class="gadget">
+            <div class="gadget-top">
+                <span id="current">3</span><span id="total"> / 10<span>
+                        </div>
+                        <div class="gadget-bottom">
+                            QUESTIONS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/img (3).jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
+            <div class="row ans">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <ul>
+                        <li class="wrong">Steven Finn</li>
+                        <li class="correct">Dale Steyn</li>
+                        <li class="wrong">James Anderson</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div id="ques4" style="display : none">
+<div class="row img">
+    <div class="col-md-3">
+        <div class="gadget">
+            <div class="gadget-top">
+                <span id="current">4</span><span id="total"> / 10<span>
+                        </div>
+                        <div class="gadget-bottom">
+                            QUESTIONS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/img (4).jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
+            <div class="row ans">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <ul>
+                        <li class="wrong">Steven Finn</li>
+                        <li class="correct">Dale Steyn</li>
+                        <li class="wrong">James Anderson</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div id="ques5" style="display : none">
+<div class="row img">
+    <div class="col-md-3">
+        <div class="gadget">
+            <div class="gadget-top">
+                <span id="current">5</span><span id="total"> / 10<span>
+                        </div>
+                        <div class="gadget-bottom">
+                            QUESTIONS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/img (5).jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
+            <div class="row ans">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <ul>
+                        <li class="wrong">Steven Finn</li>
+                        <li class="correct">Dale Steyn</li>
+                        <li class="wrong">James Anderson</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div id="ques6" style="display : none">
+<div class="row img">
+    <div class="col-md-3">
+        <div class="gadget">
+            <div class="gadget-top">
+                <span id="current">6</span><span id="total"> / 10<span>
+                        </div>
+                        <div class="gadget-bottom">
+                            QUESTIONS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/img (6).jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
+            <div class="row ans">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <ul>
+                        <li class="wrong">Steven Finn</li>
+                        <li class="correct">Dale Steyn</li>
+                        <li class="wrong">James Anderson</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div id="ques7" style="display : none">
+<div class="row img">
+    <div class="col-md-3">
+        <div class="gadget">
+            <div class="gadget-top">
+                <span id="current">7</span><span id="total"> / 10<span>
+                        </div>
+                        <div class="gadget-bottom">
+                            QUESTIONS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/img (7).jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
+            <div class="row ans">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <ul>
+                        <li class="wrong">Steven Finn</li>
+                        <li class="correct">Dale Steyn</li>
+                        <li class="wrong">James Anderson</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div id="ques8" style="display : none">
+<div class="row img">
+    <div class="col-md-3">
+        <div class="gadget">
+            <div class="gadget-top">
+                <span id="current">8</span><span id="total"> / 10<span>
+                        </div>
+                        <div class="gadget-bottom">
+                            QUESTIONS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/img (8).jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
+            <div class="row ans">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <ul>
+                        <li class="wrong">Steven Finn</li>
+                        <li class="correct">Dale Steyn</li>
+                        <li class="wrong">James Anderson</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div id="ques9" style="display : none">
+<div class="row img">
+    <div class="col-md-3">
+        <div class="gadget">
+            <div class="gadget-top">
+                <span id="current">9</span><span id="total"> / 10<span>
+                        </div>
+                        <div class="gadget-bottom">
+                            QUESTIONS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/img (9).jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
+            <div class="row ans">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <ul>
+                        <li class="wrong">Steven Finn</li>
+                        <li class="correct">Dale Steyn</li>
+                        <li class="wrong">James Anderson</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div id="ques10" style="display : none">
+<div class="row img">
+    <div class="col-md-3">
+        <div class="gadget">
+            <div class="gadget-top">
+                <span id="current">10</span><span id="total"> / 10<span>
+                        </div>
+                        <div class="gadget-bottom">
+                            QUESTIONS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/img (10).jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
+            <div class="row ans">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <ul>
+                        <li class="wrong">Steven Finn</li>
+                        <li class="correct">Dale Steyn</li>
+                        <li class="wrong">James Anderson</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="result" class="hidden">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <h1>Your Result</h1>
+                </div>
+            </div>
+            <div class="row gadget-rslt">
+                <div class="col-xs-12">
+                    <div class=" top">
+                        <span id="per"></span>
+            </div>
+            <div class="bottom">
+                Percentage
+            </div>
+        </div>
+    </div>
+    <div class="row gadget-rslt">
+        <div class="col-xs-12">
+            <div class=" top">
+                <span id="score"></span>
+            </div>
+            <div class="bottom">
+                Score
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 <script src="app.js"></script>
