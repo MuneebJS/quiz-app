@@ -11,15 +11,18 @@
 
 <body>
     <div class="container">
-        <div id="begin">
-            <div class="row">
-                <div id="header-img" class="col-xs-12">
-                    <img src="images/header.gif" alt="Cricket Quiz" class="img-responsive">
-                </div>
+        <div class="row">
+            <div class="col-xs-12 header-img">
+                <img src="images/header.gif" alt="Cricket Quiz" class="img-responsive" id="header-img">
             </div>
+        </div>
+        <div id="begin">
             <div>
                 <p class="col-xs-12 col-md-offset-2 col-md-8">
                     How much you know about Cricketers.
+                </p>
+                <p class="col-xs-12 col-md-offset-2 col-md-8">
+                    In this quiz you have to select the name of the Cricketer.
                 </p>
             </div>
             <div class="row">
@@ -290,6 +293,18 @@
                 </div>
             </div>
         </div>
+        <div id="get-rslt" class="hidden">
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <h1>You have completed your Quiz click below to get your result</h1>
+                </div>
+                <div class="row">
+                    <div class="col-xs-offset-2 col-xs-8">
+                        <input type="button" value="Get Result" class="btn btn-primary btn-lg" id="get-rslt-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="result" class="hidden">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
@@ -312,7 +327,7 @@
                 <span id="score"></span>
             </div>
             <div class="bottom">
-                Score
+                Correct Answers
             </div>
         </div>
     </div>
@@ -320,5 +335,4 @@
 </div>
 <script src="app.js"></script>
 </body>
-
 </html>
