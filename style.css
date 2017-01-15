@@ -22,7 +22,7 @@ li {
     color: 40424f;
     cursor: pointer;
     padding: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.4em;
     width: 100%;
     margin: 6px auto;
     border: 2px solid #d6d6d6;
@@ -82,7 +82,7 @@ img {
     text-align: center!important;
 }
 
-p, #get-rslt h1 {
+p, #get-rslt h1, .ques {
     font-size: 50px;
     color: #D1CBB6;
     margin-top: 40px;
