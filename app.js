@@ -11,6 +11,7 @@ var current_ques = document.getElementById('current');
 var time_span = document.getElementById('time');
 var time_rslt_span = document.getElementById('time-rslt');
 var gadget_contain = document.getElementById('gadgets');
+var play_again_btn = document.getElementById('play-again');
 var l = li_correct_cls.length;
 var score = 0;
 var quesNo = 1;
@@ -71,4 +72,6 @@ for (var i = l - 3; i < l - 1; i++) {
     }
 }
 
-
+play_again_btn.onclick = function() {
+    location.reload();
+}
